@@ -1,0 +1,30 @@
+.createContainer {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 53px;
+    margin-top: 40px;    
+}
+
+.createHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textOne {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.textTwo {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.stepperContainer {
+    margin-top: 45px;
+}

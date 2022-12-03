@@ -1,0 +1,90 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    width: 95%;
+    margin-top: 25px;
+    margin-left: 32px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textOne {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.textTwo {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 8px;
+}
+
+.headerBar {
+    height: 1.5px;
+    background-color: #EAEAEA;
+    width: 95%;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    align-self: center;
+}
+
+.choices {
+   display: flex;
+   align-items: center;
+   width: 95%;
+   align-self: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.card {
+    width: 32%;
+    /* background-color: aqua; */
+    height: 80px;
+    border-radius: 10px;
+    border: 1.5px solid #F3F3F3;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 1.5px solid #0F6EFF;
+}
+
+.cardBody {
+    margin-left: 17px;
+    margin-right: 40.9px;
+}
+
+.cardHeading {
+    font-weight: 500;
+    font-size: 16px;
+    color: #0B1A33;
+    margin-bottom: 5px;
+}
+
+.cardDate {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(11, 26, 51, .5)
+}
+
+.toggle {
+    appearance: none;
+}
+
+input[type="radio"]:checked + .card {
+    border: 1.5px solid #0F6EFF;
+}
+
+

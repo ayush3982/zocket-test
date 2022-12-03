@@ -1,0 +1,115 @@
+.tableMenu {
+    /* background-color: aqua; */
+    margin-top: 22px;
+    height: 48px;
+    /* background-color: #F8F8F8;
+    border: 1.5px solid #EAEAEA; */
+    /* border-radius: 10px;
+    margin-right: 33px;
+    margin-left: 32px; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.boxOne {
+    width: 35px;
+    /* background-color: aqua; */
+    height: 100%;;
+}
+
+.boxTwo {
+    width: 100%;
+    background-color: #F8F8F8;
+    border: 1.5px solid #EAEAEA;
+    height: 100%;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxThree {
+    width: 33px;
+    /* background-color: aqua; */
+    height: 100%;;
+}
+
+.check {
+    width: 16px;
+    height: 16px;
+    margin-left: 25px;
+    margin-right: 17px;
+    border-radius: 3px;
+}
+
+.on {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 30px;
+}
+
+.campaign {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 199px;
+}
+
+.data {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 135px;
+}
+
+.clicks {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 25px;
+}
+
+.budget {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 55px;
+}
+
+.location {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 36px;
+}
+
+.platform {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 25px;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 86px;
+}
+
+.action {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 41px;
+}
+
+.tableRows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}

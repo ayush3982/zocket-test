@@ -1,0 +1,102 @@
+.big {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+}
+
+.boxOne {
+    width: 35px;
+}
+
+.boxTwo {
+    width: 33px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 95%;
+    border-bottom: 1.5px solid #EAEAEA;
+}
+
+.check {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-left: 25px;
+}
+
+.on {
+    transform: translateX(-19px);
+}
+
+.campaignContainer {
+    display: flex;
+    align-items: center;
+    transform: translateX(-20px);
+}
+
+.campaignBody {
+    margin-left: 13px;
+}
+
+.campaignHeading {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.campaignDate {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.dateRange {
+    font-size: 14px;
+    font-weight: 400;
+    transform: translateX(-33px);
+}
+
+.clicks {
+    font-size: 14px;
+    font-weight: 400;
+    transform: translateX(-33px);
+}
+
+.budget {
+    font-size: 14px;
+    font-weight: 400;
+    transform: translateX(-33px);
+}
+
+.place {
+    font-size: 14px;
+    font-weight: 400;
+    transform: translateX(-30px);
+}
+
+.iconEdit {
+    transform: translateX(-10px);
+}
+
+.iconDelete {
+    transform: translateX(-30px);
+}
+
+.status {
+    width: 104px;
+    height: 30px;
+    border-radius: 24px;
+    color: #317C2E;
+    background-color: #E1FFE0;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

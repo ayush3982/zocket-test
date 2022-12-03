@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+}
+
+.sideBar {
+    background-color: #001738;
+    min-height: 100vh;
+    width: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restBody {
+    background-color: #E5E5E5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 1px solid #DAE6FF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.name {
+    color: #1B3F67;
+    font-size: 14;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.crownBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 32px;
+    background-color: rgba(242, 154, 46, 0.1);
+    border-radius: 5px;
+    margin-left: 7px;
+}
+
+.crownText {
+    color: #FF8C00;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.trial {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.translate {
+    margin-right: 51px;
+    margin-left: 16px;
+}
+
+.bottomArrow {
+    margin-left: 6px;
+}
+
+.avatar {
+    margin-left: 19.32px
+} 
+
+.bell {
+    margin-left: 19.31px
+}
+
+.giftBox {
+    margin-left: 20px;
+}
+
+.blueLogo {
+    width: 46px;
+    margin-top: 51.23px;
+}
+
+.buttonContainer {
+    margin-top: 62.45px;
+}
+
