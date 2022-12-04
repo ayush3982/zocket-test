@@ -4,7 +4,9 @@ import phoneOutline from './../assets/phoneOutline.svg'
 import phoneFilled from './../assets/phoneFilled.svg'
 import click from './../assets/click.svg'
 import clickOutline from './../assets/clickOutline.svg'
-import blueberry from './../assets/blueberry.svg'
+import post from './../assets/post.svg'
+import mukund from './../assets/mukund.svg'
+import lowBar from './../assets/lowBar.svg'
 
 const StepFour = () => {
 
@@ -31,9 +33,33 @@ const StepFour = () => {
         return (
             <>
                 <label className = {styles.card} onMouseOver = {handleLeave} onMouseLeave = {handleMove}>
+                    {fill && (<img className = {styles.tick}  src = {click} />)}
                     <div className = {styles.cardHeader}>
-                        
+                        <img className = {styles.avatar}  src = {mukund} />
+                        <div className = {styles.cardBody}>
+                            <div className = {styles.cardHeading}>
+                                Mukund Cake Shop
+                            </div>
+                            <div className = {styles.cardDate}>
+                                Sponsored
+                            </div>
+                        </div>
                     </div>
+                    <div className = {styles.cardData}>
+                        We are the best bakery around you. Please like my page to get updates on exciting offers and discounts
+                    </div>
+                    <img className = {styles.postImage} src = {post} />
+                    <img className = {styles.postImageLow} src = {lowBar} />
+                    {fill && (
+                        <div className = {styles.buttonGroup}>
+                            <div className = {styles.button}>
+                                Change image
+                            </div>
+                            <div className = {styles.button}>
+                                Edit text
+                            </div>
+                        </div>
+                    )}
                 </label>
             </>
         )

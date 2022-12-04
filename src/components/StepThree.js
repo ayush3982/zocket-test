@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './../styles/two.module.css';
+import styles from './../styles/three.module.css';
 import phoneOutline from './../assets/phoneOutline.svg'
 import phoneFilled from './../assets/phoneFilled.svg'
 import click from './../assets/click.svg'
@@ -8,65 +8,36 @@ import blueberry from './../assets/blueberry.svg'
 
 const StepThree = () => {
 
-    const Card = () => {
 
-        const [fill, setFill] = useState(false);
-
-        const handleMove = () => {
-            setFill(false)
-        }
-    
-        const handleLeave = () => {
-            setFill(true)
-        } 
-
-        let button;
-
-        if(!fill) {
-            button = <img className = {styles.click}  src = {clickOutline} />
-        } else {
-            button = <img className = {styles.click}  src = {click} />
-        } 
-
-        return (
-            <>
-                <label className = {styles.card} onMouseOver = {handleLeave} onMouseLeave = {handleMove}>
-                    <img className = {styles.click}  src = {blueberry} />
-                    <div className = {styles.cardBody}>
-                        <div className = {styles.cardHeading}>
-                            Blueberry cake with raw toppings
-                        </div>
-                        <div className = {styles.cardDate}>
-                            Rs: 2,290
-                        </div>
-                    </div>
-                    {button}
-                </label>
-            </>
-        )
-    }
 
     return (
         <div className = {styles.wrapper}>
             <div className = {styles.header}>
                 <div className = {styles.textOne}>
-                    Choose The Product
+                    Campaign Settings
                 </div>
                 <div className = {styles.textTwo}>
-                    (Step 2 of 4)
+                    (Step 3 of 4)
                 </div>
             </div>    
             <div className = {styles.headerBar}> </div>
-            <div className = {styles.choices}>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+            <div className = {styles.miniWrapper}>
+                <div className = {styles.rowOne}>
+                    <div className = {styles.blueContainer}>1</div>
+                    <div className = {styles.textContainer}>Budget and dates info</div>
+                </div>
+                <div className = {styles.rowTwo}>
+                    <div className = {styles.longBar}></div>
+                    <div className = {styles.budgetContainer}>
+                        <div className = {styles.budgetLine}>Budget Timeline</div>
+                        <div className = {styles.weirdButton}>
+                            <div className = {styles.weirdContainer}>
+                                Lifetime
+                            </div>
+                            <div className = {styles.weirdText}>Daily</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

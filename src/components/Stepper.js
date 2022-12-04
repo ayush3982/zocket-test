@@ -14,7 +14,7 @@ import StepFour from './StepFour'
 
 const Stepper = () => {
 
-    const [step, setStep] = useState(4);
+    const [step, setStep] = useState(3);
 
     const handleTwo = () => {
         setStep(2);
@@ -217,8 +217,8 @@ const Stepper = () => {
                         </div>
                     </div>
                 </div>
-                <div className = {styles.stepperBox}>
-                    hui
+                <div className = {styles.stepperBoxThree}>
+                    <StepThree />
                 </div>
                 <div className = {styles.stepperButtonContainer}>
                     <div className = {styles.stepperButton} onClick = {handleFour}>

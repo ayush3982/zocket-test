@@ -52,6 +52,16 @@
     border: 1px solid #DAE6FF;
 }
 
+.stepperBoxThree {
+    width: 75%;
+    background-color: white;
+    min-height: 480px;
+    border-radius: 10px;
+
+    border: 1px solid #DAE6FF;
+}
+
+
 .stepperBoxFour {
     width: 100%;
     background-color: white;

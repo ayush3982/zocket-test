@@ -12,6 +12,15 @@
     justify-content: flex-start;
 }
 
+.headerBar {
+    height: 1.5px;
+    background-color: #EAEAEA;
+    width: 95%;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    align-self: center;
+}
+
 .textOne {
     font-weight: 700;
     font-size: 16px;
@@ -24,67 +33,92 @@
     margin-left: 8px;
 }
 
-.headerBar {
-    height: 1.5px;
-    background-color: #EAEAEA;
-    width: 95%;
-    margin-top: 8px;
-    margin-bottom: 24px;
-    align-self: center;
+
+.miniWrapper {
+    display: flex;
+    flex-direction: column;
 }
 
-.choices {
-   display: flex;
-   align-items: center;
-   width: 95%;
-   align-self: center;
-   justify-content: space-between;
-   flex-wrap: wrap;
+.rowOne {
+    display: flex;
+    align-items: center;
 }
 
-.card {
-    width: 32%;
-    /* background-color: aqua; */
-    height: 80px;
-    border-radius: 10px;
-    border: 1.5px solid #F3F3F3;
-    margin-bottom: 12px;
-    margin-right: 12px;
-    transition: all 0.2s ease-in-out;
+.blueContainer {
+    width: 24px;
+    height: 24px;
+    background-color: #0F6EFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    margin-left: 29px;
+    font-weight: 700;
+}
+
+.textContainer {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 9px;
+}
+
+.rowTwo {
+    display: flex;
+    align-items: center;
+}
+
+.longBar {
+    height: 320px;
+    width: 1.5px;
+    background-color: rgba(0, 0, 0, 0.16);
+    margin-left: 41px;
+    margin-top: 9px;
+}
+
+.blueContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.budgetContainer {
+    margin-left: 26px;
+}
+
+.budgetLine {
+    font-weight: 500;
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 6px;
+}
+
+.weirdButton {
+    display: flex;
+    width: 229px;
+    height: 39px;
+    background: #F0F0F0;
+    border-radius: 47.0588px;
+    align-items: center;
+    color: #999999;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.weirdContainer {
+    width: 122.13px;
+    height: 39px;
+    background: #0F6EFF;
+    border-radius: 47.0588px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-}
-
-.card:hover {
-    border: 1.5px solid #0F6EFF;
-}
-
-.cardBody {
-    margin-left: 17px;
-    margin-right: 40.9px;
-}
-
-.cardHeading {
+    color: white;
     font-weight: 500;
-    font-size: 16px;
-    color: #0B1A33;
-    margin-bottom: 5px;
+    font-size: 14px;
 }
 
-.cardDate {
-    font-weight: 400;
-    font-size: 13px;
-    color: rgba(11, 26, 51, .5)
+.weirdText {
+    margin-left: 33.87px;
 }
-
-.toggle {
-    appearance: none;
-}
-
-input[type="radio"]:checked + .card {
-    border: 1.5px solid #0F6EFF;
-}
-
-
