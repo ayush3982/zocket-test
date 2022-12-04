@@ -14,7 +14,7 @@ import StepFour from './StepFour'
 
 const Stepper = () => {
 
-    const [step, setStep] = useState(3);
+    const [step, setStep] = useState(1);
 
     const handleTwo = () => {
         setStep(2);

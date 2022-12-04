@@ -78,6 +78,14 @@
     margin-top: 9px;
 }
 
+.longBarHidden {
+    height: 320px;
+    width: 1.5px;
+    background-color: rgba(255, 255, 255, 0.16);
+    margin-left: 41px;
+    margin-top: 9px;
+}
+
 .blueContainer {
     display: flex;
     flex-direction: column;
@@ -93,6 +101,14 @@
     color: #606060;
     margin-bottom: 6px;
 }
+
+.budgetLineTwo {
+    font-weight: 500;
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 6px;
+}
+
 
 .weirdButton {
     display: flex;
@@ -121,4 +137,92 @@
 
 .weirdText {
     margin-left: 33.87px;
+}
+
+.rowThree {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.inputContainer {
+    display: flex;
+    margin-top: 16px;
+}
+
+.textBox {
+    width: 363px;
+    height: 50px;
+    border: 1.5px solid #E9E9E9;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-right: 16px;
+}
+
+.textBox:focus {
+    outline: none !important;
+}
+
+.textBoxBig {
+    width: 790px;
+    height: 50px;
+    border: 1.5px solid #E9E9E9;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-right: 16px;
+}
+
+.textBoxBig:focus {
+    outline: none !important;
+}
+
+.inputLine {
+    display: flex;
+    align-items: center;
+}
+
+.click {
+    transform: translateX(-50px);
+}
+
+.newRow {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.priceBox {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 11px;
+    margin-right: 5.19px;
+    margin-left: 4px;
+}
+
+.slider {
+    width: 795px;
+    height: 5px;
+    transform: translateX(-5px);
+}
+
+.sliderLabels {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    color: #606060;
+}
+
+.sliderLabelTwo {
+    margin-right: 40px;
 }
