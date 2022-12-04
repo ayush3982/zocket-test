@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '../styles/table.module.css'
 import TableRow from './TableRow';
+import { oneData } from '../data/one';
+
 
 const Table = () => {
     return (
@@ -22,10 +24,19 @@ const Table = () => {
             <div className = {styles.boxThree}></div>
             </div>
            <div className = {styles.tableRows}>
-            <TableRow />
-            <TableRow />
-            <TableRow />
-            <TableRow />
+            {oneData.map((data) =>
+                <TableRow 
+                    title = {data.title}
+                    created = {data.created}
+                    range = {data.range}
+                    clicks = {data.clicks}
+                    budget = {data.budget}
+                    location = {data.location}
+                    platform = {data.platform}
+                    status = {data.status}
+                    image = {data.image}
+                />
+            )}
            </div>
         </>
     )

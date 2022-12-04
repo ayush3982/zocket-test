@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import styles from './../styles/four.module.css';
-import phoneOutline from './../assets/phoneOutline.svg'
-import phoneFilled from './../assets/phoneFilled.svg'
 import click from './../assets/click.svg'
 import clickOutline from './../assets/clickOutline.svg'
 import post from './../assets/post.svg'
+import postTwo from './../assets/postTwo.svg'
+import postThree from './../assets/postThree.svg'
+import postFour from './../assets/postFour.svg'
 import mukund from './../assets/mukund.svg'
 import lowBar from './../assets/lowBar.svg'
 
 const StepFour = () => {
 
-    const Card = () => {
+    const Card = (props) => {
 
         const [fill, setFill] = useState(false);
 
@@ -48,7 +49,7 @@ const StepFour = () => {
                     <div className = {styles.cardData}>
                         We are the best bakery around you. Please like my page to get updates on exciting offers and discounts
                     </div>
-                    <img className = {styles.postImage} src = {post} />
+                    <img className = {styles.postImage} src = {props.image} />
                     <img className = {styles.postImageLow} src = {lowBar} />
                     {fill && (
                         <div className = {styles.buttonGroup}>
@@ -77,10 +78,10 @@ const StepFour = () => {
             </div>    
             <div className = {styles.headerBar}> </div>
             <div className = {styles.choices}>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card image = {post}/>
+                <Card image = {postTwo}/>
+                <Card image = {postThree}/>
+                <Card image = {postFour}/>
             </div>
         </div>
     )

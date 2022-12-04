@@ -87,7 +87,7 @@
     transform: translateX(-30px);
 }
 
-.status {
+.statusLive {
     width: 104px;
     height: 30px;
     border-radius: 24px;
@@ -100,3 +100,28 @@
     align-items: center;
 }
 
+.statusPaused {
+    width: 104px;
+    height: 30px;
+    border-radius: 24px;
+    color: #D1A307;
+    background-color: #FFF8E0;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusExhausted {
+    width: 104px;
+    height: 30px;
+    border-radius: 24px;
+    color: #FC3F3F;
+    background-color: #FFDEDE;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

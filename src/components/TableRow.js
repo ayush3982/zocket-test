@@ -1,12 +1,18 @@
 import React from "react";
 import styles from '../styles/row.module.css'
 import SwitchButton from './SwitchButton'
-import campaignImage from './../assets/campaignImage.svg'
+import campaignOne from './../assets/campaignOne.svg'
+import campaignTwo from './../assets/campaignTwo.svg'
+import campaignThree from './../assets/campaignThree.svg'
+import campaignFour from './../assets/campaignFour.svg'
+import campaignFive from './../assets/campaignFive.svg'
 import facebook from './../assets/facebook.svg'
+import google from './../assets/google.svg'
+import youtube from './../assets/youtube.svg'
 import edit from './../assets/edit.svg'
 import deleteIcon from './../assets/deleteIcon.svg'
 
-const TableRow = () => {
+const TableRow = (props) => {
     return (
         <div className = {styles.big}>
             <div className = {styles.boxOne}></div>
@@ -17,33 +23,67 @@ const TableRow = () => {
                 </div>
                 <div className = {styles.campaignContainer}>
                     <div className = {styles.campaignImageContainer}>
-                        <img src = {campaignImage} />
+                    {props.image == "campaignOne" && (
+                        <img src = {campaignOne} />
+                    )}
+                    {props.image == "campaignTwo" && (
+                        <img src = {campaignTwo} />
+                    )}
+                    {props.image == "campaignThree" && (
+                        <img src = {campaignThree} />
+                    )}
+                    {props.image == "campaignFour" && (
+                        <img src = {campaignFour} />
+                    )}
+                    {props.image == "campaignFive" && (
+                        <img src = {campaignFive} />
+                    )}
                     </div>
                     <div className = {styles.campaignBody}>
                         <div className = {styles.campaignHeading}>
-                            Blueberry Cake Campaign
+                            {props.title}
                         </div>
                         <div className = {styles.campaignDate}>
-                            Created on 14 July
+                            {props.created}
                         </div>
                     </div>
                 </div>
                 <div className = {styles.dateRange}>
-                    25 Jul 20202 - 01 Aug 2020
+                    {props.range}
                 </div>
                 <div className = {styles.clicks}>
-                    300
+                    {props.clicks}
                 </div>
                 <div className = {styles.budget}>
-                    INR.3,400
+                    {props.budget}
                 </div>
                 <div className = {styles.place}>
-                    Chennai
+                    {props.location}
                 </div>
-                <img src = {facebook} />
-                <div className = {styles.status}>
-                    Live now
-                </div>
+                {props.platform == "Facebook" && (
+                    <img src = {facebook} />
+                )}
+                {props.platform == "Google" && (
+                    <img src = {google} />
+                )}
+                {props.platform == "Youtube" && (
+                    <img src = {youtube} />
+                )}
+                {props.status == "Live now" && (
+                    <div className = {styles.statusLive}>
+                    {props.status}
+                    </div>
+                )}
+                {props.status == "Paused" && (
+                    <div className = {styles.statusPaused}>
+                    {props.status}
+                    </div>
+                )}
+                {props.status == "Exhausted" && (
+                    <div className = {styles.statusExhausted}>
+                    {props.status}
+                    </div>
+                )}
                 <img className = {styles.iconEdit} src = {edit} />
                 <img className = {styles.iconDelete} src = {deleteIcon} />
             </div>

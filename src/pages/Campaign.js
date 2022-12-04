@@ -8,7 +8,7 @@ import NewCampaign from '../components/NewCampaign'
 
 const Campaign = () => {
 
-    const [newCampaign, setNewCampaign] = useState(true);
+    const [newCampaign, setNewCampaign] = useState(false);
 
     const handleClick = () => {
         setNewCampaign(true)
